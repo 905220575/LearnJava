@@ -1,7 +1,7 @@
 # LearnJava
 ###/src/
 --LeapYear.java               //判断闰年
-![image](https://github.com/905220575/LearnJava/img/LeapYear.png)
+![image](https://github.com/905220575/LearnJava.git/img/LeapYear.png)
 --ToGradeScore.java           //百分制成绩转化为等级成绩
 --Pattern.java                //打印图案
 --ChocolateBoilerTest.java , ChocolateBoiler.java //单例模式
