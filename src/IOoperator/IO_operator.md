@@ -1,6 +1,19 @@
-﻿----FCFS,FCFS_Test,FCFSTestTwo,FCFStwo,FileList,Task//先来先服务，分别一个队列和两个队列情况
-# 题目
-任务(Task)的ID、开始时间和服务时间由文件读入，形如右图所示。这个任务列表文件首先由程序生成，每秒一个任务达到，服务时间由{6,2,1,3,9}这个集合中的数据随机获取。文件列表要包含至少100个任务。先要求实现如下要求的FCFS当只有一个处理队列时的情况当有两个处理队列时的情况
+### JAVA的IO操作
+# 实验一 基本IO操作
+实验要求
+从键盘接收字节流
+写入到当前目录下的src.txt文件中
+将src.txt文件内容复制到当前目录下dest.txt文件中
+将dest.txt文件内容显示到屏幕上
 
-![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/zhonghe/FCFSone.png)
-![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/zhonghe/FCFStwo.png)
+实验结果
+控制台输入
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/InPut.png)
+文件夹情况
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/srcanddest.png)
+txt文件查看
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/src.png)
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/dest.png)
+
+
+
