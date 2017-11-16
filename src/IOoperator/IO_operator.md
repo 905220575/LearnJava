@@ -31,7 +31,7 @@ txt文件查看
 目录的信息写出到文件中。注意，文件信息首先按类型分类，文件夹在前，文件在后，并且他们各自按照文件名字符串的顺序排序。  
 
 #### 部分代码展示
-'		 String path="C://Users//Administrator//Workspaces//MyEclipse Professional 2014//JavaLearn";
+`		 String path="C://Users//Administrator//Workspaces//MyEclipse Professional 2014//JavaLearn";
 		 //这里改成文件夹路径，记住是//不是\
 		 File file=new File(path);
 		 File[] tempList = file.listFiles();
@@ -57,5 +57,5 @@ txt文件查看
 				 inFile.write(str);
 			 }
 		}	
-		 inFile.close();'
+		 inFile.close();`
 
