@@ -18,4 +18,4 @@ PizzaStore的构造函数需要传入SimplePizzaFactory实例，并且在orderPi
 然后进行披萨生产，包括pizza.prepare; pizza.bake(); pizza.cut(); pizza.box()，最后返回该Pizza子类实例。
 
 #### 实验结果  
-![image](https://raw.githubusercontent.com/wusanmao23333/LearningJAVA/master/img/PizzaFactory/PizzaFactory.png)  
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/PizzaFactory/PizzaFactory.png)  
