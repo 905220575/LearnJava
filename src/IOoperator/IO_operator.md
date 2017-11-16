@@ -57,4 +57,11 @@ txt文件查看
 			 }
 		}	
 		 inFile.close();`
+#### 实验结果
+控制台  
 
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/FileTree.png)  
+
+txt文件内容  
+
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/FileTreeTxt.png)  
