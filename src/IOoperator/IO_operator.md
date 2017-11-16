@@ -31,14 +31,14 @@ txt文件查看
 目录的信息写出到文件中。注意，文件信息首先按类型分类，文件夹在前，文件在后，并且他们各自按照文件名字符串的顺序排序。  
 
 #### 部分代码展示
-`		 String path="C://Users//Administrator//Workspaces//MyEclipse Professional 2014//JavaLearn";
-		 //这里改成文件夹路径，记住是//不是\
-		 File file=new File(path);
-		 File[] tempList = file.listFiles();
-		 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		 Calendar cal = Calendar.getInstance();
+`		 String path="C://Users//Administrator//Workspaces//MyEclipse Professional 2014//JavaLearn";  
+		 //这里改成文件夹路径，记住是//不是\  
+		 File file=new File(path);  
+		 File[] tempList = file.listFiles();  
+		 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
+		 Calendar cal = Calendar.getInstance();  
 		 FileWriter  inFile = new FileWriter("src/FileTree.txt");  
-		 System.out.println("该目录下对象个数："+tempList.length);
+		 System.out.println("该目录下对象个数："+tempList.length);  
 		 for (int i = 0; i < tempList.length; i++) {
 			 if (tempList[i].isDirectory()) {
 				 cal.setTimeInMillis(tempList[i].lastModified());
