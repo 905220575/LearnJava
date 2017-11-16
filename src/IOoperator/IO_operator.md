@@ -32,6 +32,7 @@ txt文件查看
 
 #### 部分代码展示
 `		 String path="C://Users//Administrator//Workspaces//MyEclipse Professional 2014//JavaLearn";  
+
 		 File file=new File(path);  
 		 File[] tempList = file.listFiles();  
 		 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
