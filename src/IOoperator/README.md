@@ -11,7 +11,7 @@
 
 控制台输入  
 
-![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/InPut.png) 
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/Input.png) 
 
 文件夹情况  
 
