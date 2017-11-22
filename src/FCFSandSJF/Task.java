@@ -1,4 +1,4 @@
-package zhonghe;
+package FCFSandSJF;
 
 public class Task {
 

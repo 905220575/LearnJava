@@ -1,4 +1,4 @@
-package zhonghe;
+package FCFSandSJF;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,7 +9,7 @@ public class SJF_Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		SJF sjf = new SJF();
-		sjf.Run("FileList.txt");
+		sjf.Run("input.txt");
 	}
 
 }

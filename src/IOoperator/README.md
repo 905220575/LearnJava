@@ -1,4 +1,4 @@
-# JAVA的IO操作
+﻿# JAVA的IO操作
 ### 实验一 基本IO操作
 #### 实验要求  
 
@@ -65,3 +65,79 @@ txt文件查看
 txt文件内容  
 
 ![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/FileTreeTxt.png)  
+
+### 实验三 带缓冲区的IO
+#### 实验要求
+
+用带缓冲和不带缓冲的字符流实现文件复制，并比较耗时情况。
+
+#### 部分代码展示
+		 `long startTime = System.currentTimeMillis();    //获取开始时间
+		try {  
+		    File inFile = new File("C://Users//Administrator//Desktop//src.txt");  
+		    File outFile = new File("C://Users//Administrator//Desktop//dest.txt");  
+		    FileInputStream finS = new FileInputStream(inFile);  
+		    FileOutputStream foutS = new FileOutputStream(outFile);  
+		    BufferedInputStream bfinS=new  BufferedInputStream(finS);
+		    BufferedOutputStream bfoutS=new  BufferedOutputStream(foutS) ;
+		    int c;
+		    while((c = bfinS.read()) != -1){
+		    	bfoutS.write(c);
+		    }
+		    bfinS.close();
+		    bfoutS.close();
+		}
+		catch (IOException e) {  
+            System.err.println("BufferStreamsTest: " + e);  
+        } 
+		long endTime = System.currentTimeMillis();    //获取结束时间
+		System.out.println("带缓存区程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间
+		startTime = System.currentTimeMillis();    //获取开始时间
+        try {  
+            File inFile = new File("C://Users//Administrator//Desktop//src.txt");  
+            File outFile = new File("C://Users//Administrator//Desktop//dest.txt");  
+            FileInputStream finS = new FileInputStream(inFile);  
+            FileOutputStream foutS = new FileOutputStream(outFile);  
+            int c;  
+            while ((c = finS.read()) != -1) {  
+                foutS.write(c);  
+            }  
+            finS.close();  
+            foutS.close();  
+        } catch (IOException e) {  
+            System.err.println("FileStreamsTest: " + e);  
+        } 
+		endTime = System.currentTimeMillis();    //获取结束时间
+		System.out.println("不带缓存区程序运行时间：" + (endTime - startTime) + "ms");    //输出程序运行时间`
+#### 实验结果  
+
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/BufferStream.png)  
+
+### 实验四 对象序列化
+#### 实验要求
+
+类Student表示学生，属性包括{studentID, name, sex} (学号，姓名，性别)，使用序列化技术定义Student。学生信息从文件list.txt读入，并按照学号升序排列。注意，这里姓名和性别可以组织成String类型，而学号可以是String也可以是Long。使用ObjectOutputStream将已经排序的学生信息写出到文件“student.bin”中。使用ObjectInputStream将“student.bin”中的对象信息读入程序，显示在控制台中。
+
+#### 部分代码展示
+		 `File file = new File("C:/Users/Administrator/Desktop/list.txt");
+	
+		this.destFile = new File("C:/Users/Administrator/Desktop/student.bin");
+		this.student = new ArrayList<Student>();
+		
+        Scanner scanner = null;
+		try {
+			scanner = new Scanner(file);
+			while (scanner.hasNext()) {
+                long StudentID = scanner.nextLong();
+                String name = scanner.next();
+                char sex = scanner.next().charAt(0);
+                this.student.add(new Student(StudentID, name, sex));
+            }
+		} catch (IOException e) {
+			// TODO: handle exception
+			System.err.println("FileStreamsTest: " + e);
+		}
+		sortByStudentID(this.student);`
+#### 实验结果  
+
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/IOoperator/Object.png)  

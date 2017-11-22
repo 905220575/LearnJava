@@ -1,4 +1,4 @@
-package zhonghe;
+package FCFSandSJF;
 
 import java.io.*;
 import java.util.*;
