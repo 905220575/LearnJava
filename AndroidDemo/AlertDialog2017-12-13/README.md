@@ -5,5 +5,5 @@
 
 #### 实验结果  
 
-![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/Android UI/AlertDialog.png)  
+![image](https://raw.githubusercontent.com/905220575/LearnJava/master/img/Android_UI/AlertDialog.png)  
 
