@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/textSize"
+        android:title="字体大小">
+        <menu>
+            <item android:id="@+id/tenpx"
+                android:title="10px" />
+            <item android:id="@+id/twentypx"
+                android:title="20px" />
+        </menu>
+    </item>
+    <item android:id="@+id/normalItem"
+        android:title="普通菜单栏选项" />
+    <item
+        android:id="@+id/textColor"
+        android:title="字体颜色">
+        <menu>
+            <item android:id="@+id/red"
+                android:title="红色"/>
+            <item android:id="@+id/blue"
+                android:title="蓝色"/>
+        </menu>
+    </item>
+</menu>
