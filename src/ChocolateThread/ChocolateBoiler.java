@@ -1,5 +1,6 @@
-
-public class ChocolateBoiler{
+package ChocolateThread;
+import java.lang.Thread;
+public class ChocolateBoiler implements Runnable{
 	private static ChocolateBoiler c;
 	private boolean empty;
 	private boolean boiled;
@@ -53,5 +54,21 @@ public class ChocolateBoiler{
 	}
 	public boolean isBoiled(){
 		return c.boiled;
+	}
+	public void run(){
+		try {
+			while(true){
+				synchronized(this){
+					fill();
+					boil();
+					drain();
+				}
+				Thread.sleep(1000);
+			}
+
+		} catch(InterruptedException e) { 
+			System.out.println(e); 
+		}
+	
 	}
 }
